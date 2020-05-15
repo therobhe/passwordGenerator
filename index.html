@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="pwStyle.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2 id="title">Password Generator</h2>
+        <input type="text" id="output"><br>
+        <form id="inputArea">
+            <!--Set-Password-Length-slider-->
+            <div id="ranges">
+                <label for="numSlider">How many Chars?</label>
+                <input type="range" id="numSlider" min="1" max="20" value="10">
+                <input type="number" id="numField" min="1" max="20" value="10">
+            </div>
+            <!--Allow-Chars-Upper-And-Lower-Case?-->
+            <div id="box1">
+                <label for="mixCases">Use upper case?</label>
+                <input type="checkbox" id="mixCases" checked="checked">
+            </div>
+
+            <!--Numbers-->
+            <div id="box2">
+                <label for="numbs">Use numbers?</label>
+                <input type="checkbox" id="numbs" checked="checked">
+            </div>
+
+            <!--Allow-Chars-Like_!§$%&-->
+            <div id="box3">
+                <label for="symbols">Use Symbols?</label>
+                <input type="checkbox" id="symbols" checked="checked">
+            </div>
+
+            <!--Start-PW-Generating-->
+            <button type="submit" id="execute" value="Generate Password">Generate Password</button>
+        </form>
+    </div>
+
+<script src="pwJS.js"></script>
+</body>
+</html>

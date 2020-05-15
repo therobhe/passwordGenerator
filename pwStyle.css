@@ -1,0 +1,80 @@
+body {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper  {
+    background-color: red;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputArea  {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+#box1, #box2, #box3, #ranges  {
+    grid-column: span 2;
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#title  {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#ranges {
+    display: flex;
+    align-items: center;
+}
+
+#rangeInInt  {
+    width: 2rem;
+}
+
+#output  {
+    border-radius: 1rem;
+    border: 2px solid white;
+    padding: 3px 50px;
+    margin: 1rem;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+#execute  {
+    grid-column: span 2;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#execute:hover  {
+    background-color: #ffffff33;
+}
